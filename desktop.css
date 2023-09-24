@@ -1,0 +1,106 @@
+/*for Desktop size */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+    /* naveber design start */
+.navber .nav-logo{
+    text-align: left;
+}
+.navber .nav-head{
+    text-align: left;
+    margin-top: 7px;
+}
+.navber .nav-manu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navber .nav-manu a{
+    padding: 5px 10px;
+    margin: 20px 0px;
+    background-color: transparent;
+}
+    /* naveber design end */
+
+    /* profile design start */
+.top-image{
+        right: 100px;
+        top: 50px;
+        width: 100px;
+        transition: width 1.8s, transform 1.8s;
+}
+.top-image:hover{
+    width: 140px;
+}
+
+.bottom-image{
+    left: 100px;
+    bottom: 50px;
+    width: 100px;
+    transition: width 1.8s, transform 1.8s;
+}
+.bottom-image:hover{
+    width: 140px;
+}
+
+.profile-des p{
+    color: gray;
+    margin: 0 auto;
+    width: 50%
+}
+
+    /* profile design end */
+
+     /* about me start */
+.about-me-image{
+    margin-top: 100px;
+    text-align: center;
+}
+.about-me-image img{
+    width: 270px;
+    height: 270px;
+}
+    /* about me end */
+
+     /* professional exprience start */
+
+.professional-exprience{
+    padding: 1% 5%;
+}
+      /* professional exprience end */
+
+    /* achivment-content start */
+ .achivement{
+        padding-right: 50px;
+    }
+.contact-me button{
+    width: 120px;
+}
+
+.more-way-to-contact{
+    position: relative;
+}
+
+.media-button{
+    position: absolute;
+    margin-top: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+    /* achivment-content end */
+
+    /* footer design start */
+.footer-manu a{
+    display: inline;
+}
+     /* footer design start */

@@ -1,0 +1,406 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0px;
+}
+
+    /* common style tag start */
+h2{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.styled-hr{
+    border: dashed 5px;
+    border-bottom: none;
+    width: 100px;
+    margin: 20px auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+    /* common style tag end */
+
+    /* naveber design start */
+.navber h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin: 0;
+}
+.navber{
+    background-color: #0c6168;
+    padding: 1% 7%;
+    text-align: center;
+}
+.nav-manu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+/* for  mobile [if problems some correction (mind it)]*/
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+.navber::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.navber .nav-manu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.navber .nav-manu a{
+    background-color: #40868b;
+    margin: 7px 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.navber .nav-manu a:hover{
+    background-color: gray;
+}
+    /*header design end*/
+
+    /* profile design start here */
+.profile{
+    padding: 150px 20px;
+    position: relative;
+    text-align: center;
+}
+.profile .top-image,.bottom-image{
+    width: 100px;
+}
+.top-image{
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    transition: transform 1.8s;
+}
+.top-image:hover{
+    transform: rotate(360deg);
+
+}
+.profile-des h1{
+    font-size: 3rem;
+    font-family: 'Satisfy', cursive;
+}
+.profile-des p{
+    color: gray;
+    margin: 0 auto 50px auto;
+    width: 85%
+}
+.bottom-image{
+    position: absolute;
+    left: 30px;
+
+    bottom: 50px;
+    transition: transform 1.8s;
+}
+.bottom-image:hover{
+    transform: rotate(360deg);
+}
+
+.profile::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+    /* profile design end here */
+/* project 3 , class part 03 */
+    /* about me start */
+.about-me{
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-me-image img{
+    border: 5px solid white;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 6px 3px 8px gray;
+    margin: 0 auto;
+    display: block;
+}
+.about-me-image img:hover{
+    box-shadow: 7px 5px 10px gray;
+}
+.about-me-des p{
+    font-size: 1rem;
+}
+.about-me-button{
+    background-color: #052d2f;
+    color: white;
+    width: 120px;
+    border-radius: 12px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid gray;
+    margin: 2px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    transition: 0.4s;
+}
+.about-me-button:hover{
+    box-shadow: 0 2px 7px 5px rgb(15, 197, 158);
+}
+
+.about-me::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+    /* about me end */
+
+    /* professional exprience start */
+.professional-exprience{
+    padding: 1% 0%;
+}
+.professional-exprience .card{
+    background-color: #a39e9c;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 700px;
+
+}
+.professional-exprience .card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+.card-icon img{
+    margin-top: 50px;
+    width: 100px;
+}
+
+.rounded-image{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+.card-title h2{
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+}
+.card-icon{
+    text-align: center;
+}
+
+.skills-container{
+    padding-right: 45px;
+}
+.skills-container li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    top: calc(100% + 5px);
+    left: 0;
+
+    border-radius: 1000px;
+    background-color: rgb(86, 86, 153, .5);
+}
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 15px;
+    top: calc(100% + 5px);
+    left: 0;
+
+    border-radius: 1000px;
+    background-color: rgb(41, 41, 156);
+
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+}
+
+.skills-container li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+
+.skills-container li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
+
+.skills-container li.js::after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 70%;
+    }
+}
+.skills-container li.bootst::after{
+    animation-name: bootst; 
+}
+
+@keyframes bootst{
+    to{
+        width: 60%;
+    }
+}
+.skills-container li.nodejs::after{
+    animation-name: nodejs;
+}
+
+@keyframes nodejs{
+    to{
+        width: 50%;
+    }
+}
+.skills-container li.react::after{
+    animation-name: react;
+}
+
+@keyframes react{
+    to{
+        width: 40%;
+    }
+}
+.skills-container li.github::after{
+    animation-name: github;
+}
+
+@keyframes github{
+    to{
+        width: 60%;
+    }
+}
+.skills-container li.git::after{
+    animation-name: git;
+}
+
+@keyframes git{
+    to{
+        width: 80%;
+    }
+}
+.skills-container li.mongodb::after{
+    animation-name: mongodb;
+}
+
+@keyframes mongodb{
+    to{
+        width: 40%;
+    }
+}
+.professional-exprience::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+    /* professional exprience end */
+
+    /* achivement-content start */
+.achivment-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+}
+.contact-me{
+    text-align: center;
+}
+.contact-me input , textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    resize: none;
+} 
+.contact-me button{
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #052d2f;
+    color: white;
+    margin: 10px;
+    border-radius: 15px;
+    width: 100px;
+}
+
+.more-way-to-contact{
+    text-align: center;
+}
+
+.media-button .btn{
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+
+.achivment-contact::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+     /* achivement-content start */
+
+     /* footer design start */
+footer{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.footer-manu a{
+    margin: 10px;
+    display: block;
+}
+.footer-manu a:hover{
+    color: gray;
+}
+.footer-des{
+    font-size: 0.8rem;
+}
+
+footer::after{
+    content: '';
+    clear: both;
+    display: table;
+    }
+     /* footer design start */
+
+
